@@ -1,0 +1,6 @@
+variables:  las variables son cajitas a las que se les pone un nombre y donde se puede guardar algo.
+strings:  los string son cadenas de texto que van encerradas en comillas.
+funciones: son instrucciones especificas que permiten realizar una tarea cuantas veces se desee, puede recibir argumentos que son los datos necesarios para llevar a cabo la tarea. 
+Las funciones siempre generan un resultado que se representa con la palabra return
+declaraciones if: es una condicion que permite a partir de su resultado tomar decisiones para llevar a cabo una tarea.
+valores booleanos: un dato booleano representa valores del sistema binario, es decir falso (false) o verdadero (true).
