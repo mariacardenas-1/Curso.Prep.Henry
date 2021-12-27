@@ -1,0 +1,4 @@
+for: es un ciclo que ejecuta un codigo la cantidad de veces necesarias hasta que se cumpla una condicion.
+&&: es un operador logico que significa "y" y que evalua que se cumplan dos o mas condiciones.
+||: es un operador logico que significa "o" y que evalua que se cumpla al menos una condicion.
+!: es un operador logico que evalua que una condicion sea falsa.
