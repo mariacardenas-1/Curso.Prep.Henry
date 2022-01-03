@@ -1,0 +1,1 @@
+Arrays: los arrays son listas que pueden contiener diferentes tipos de datos 
