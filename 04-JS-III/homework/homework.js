@@ -27,7 +27,7 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
   let arraySumado = []
-  for (i=0; i = array.length; i++){
+  for (i=0; i<array.length; i++){
     arraySumado.push(array[i] + 1)  
   }
   return arraySumado
@@ -63,7 +63,7 @@ function dePalabrasAFrase(palabras) {
 for (i=0; i < palabras.length; i++){
   frase = frase+ palabras[i] + ' '
 }
-return frase
+return frase.substring(0, frase.length -1)
 }
 
 
@@ -123,11 +123,11 @@ function multiplicarArgumentos() {
 // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   let numeroParametros= arguments.length
-  if(numeroParametros < 0){
+  if(numeroParametros === 0){
     return 0
   }
   if (numeroParametros === 1){
-    return arguments
+    return 1
   }
   let resultado = 1
   
@@ -143,10 +143,13 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-  console.log(arreglo.length)
-if(arreglo.length > 18){
-  return arreglo.length 
-}
+  let mayorQue18 = []
+  for (i=0; i<arreglo.length; i++){
+    if (arreglo[i] > 18){
+      mayorQue18.push(arreglo[i])
+    }
+  }
+  return mayorQue18.length 
 }
 
 
@@ -158,9 +161,6 @@ function diaDeLaSemana(numeroDeDia) {
   if(numeroDeDia === 7 || numeroDeDia === 1){
     return 'Es fin de semana'
   }
-  if (numeroDeDia > 7){
-    return 'No es un numero de dia'
-  } 
   return 'Es dia laboral' 
 } 
 
@@ -196,11 +196,18 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-  const meses = ['Enero', 'Marzo', 'Noviembre']
-  if(array.indexOf('Enero') > -1 && array.indexOf('Marzo') > -1 && array.indexOf('Noviembre') > -1){
-    return meses
+  let meses = []
+  for(i=0; i<array.length; i++){
+    if(array[i] === 'Enero' || array[i] === 'Marzo' || array[i] === 'Noviembre'){
+      meses.push(array[i])
+    }
   }
-  return 'No se encontraron los meses pedidos'
+  if(meses.length < 3){
+    return 'No se encontraron los meses pedidos'
+  }
+   else { 
+     return meses
+   }
 }
 
 
@@ -226,13 +233,18 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-  let valorAumentado =[numero +2]
-  for( i=0; i<9; i++){
-    valorAumentado.push(valorAumentado[i] + 2)
-    if( valorAumentado === i){
-      return 'Se interrumpió la ejecucion'
+  let valorAumentado= []
+  let suma = numero
+  let pararEjecucion = false
+  for(i=0; i < 10; i++){
+    if(suma === i){
+      pararEjecucion = true
+      break;
     }
-  }
+    suma = suma + 2
+    valorAumentado.push(suma)
+  } 
+  if(pararEjecucion) return 'Se interrumpió la ejecución'
   return valorAumentado
 }
 

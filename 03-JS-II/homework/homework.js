@@ -46,19 +46,19 @@ function saludo(idioma) {
   // Tu código:
  switch(idioma){
   case 'aleman':
-    return 'Guten Tag'
+    return 'Guten Tag!'
     break;  
 
   case 'mandarin':
-   return 'Ni Hao'
+   return 'Ni Hao!'
     break;
 
   case 'ingles':
-     return 'Hello'
+     return 'Hello!'
      break;
 
      default: 
-     return 'Hola'
+     return 'Hola!'
  }
 }
 
@@ -72,19 +72,19 @@ function colors(color) {
   //Usar el statement Switch.
   switch(color){
   case 'blue':
-    return 'this is blue'
+    return 'This is blue'
     break;
 
   case 'red':
-    return 'this is red'
+    return 'This is red'
     break;
 
   case 'green':
-    return 'this is green'
+    return 'This is green'
     break;
 
   case 'orange':
-    return 'this is orange'
+    return 'This is orange'
     break;
 
     default:
@@ -157,7 +157,7 @@ function operadoresLogicos(num1, num2, num3) {
     return 'Error'
   }
   else if (num1 > num2 && num1 > num3 && num1 > 0){
-    return '"Número 1 es mayor y positivo'
+    return 'Número 1 es mayor y positivo'
   }
   else if (num3 > num1 && num3 > num2){
   return num3 + 1
@@ -171,6 +171,9 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
+  if(numero < 2){
+    return false
+  }
 for ( i=2; i<=numero; i++ ){
   if (numero % i === 0){
     if (numero !== i)
