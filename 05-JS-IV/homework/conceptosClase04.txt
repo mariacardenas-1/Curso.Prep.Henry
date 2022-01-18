@@ -1,0 +1,6 @@
+Objetos: un objeto es una representacion de algo del mundo real, que contiene caracteristicas (propiedades) o funcionalidades (metodos) y almacen la informacion de modo calve:valor
+Propiedades: las propiedades son las caracteristicas que tiene un objeto
+Métodos: los metodos son las funcionalidades que tiene el objeto, lo que es capaz de hacer
+Bucle For...in: el bucle for...in se usa para ietrar sobre las propiedades de un objeto
+Notacion de puntos vs Notacion de corchetes: son formas de acceder a las propiedades de los objetos, la notacion de punto se usa para acceder al valor de una propiedad 
+y la notacion de corchetes se usa para acceder a la clave de la propiedad 

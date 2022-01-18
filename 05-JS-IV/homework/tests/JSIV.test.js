@@ -50,6 +50,9 @@ describe('invocarMetodo(object, method)', function() {
       incrementX: function() {
         this.x++;
       },
+      resta: function(){
+        this.x--
+      }
     }
     invocarMetodo(object, 'incrementX');
     expect(object.x).toBe(1);
