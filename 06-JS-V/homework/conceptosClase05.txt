@@ -1,0 +1,2 @@
+Prototype: el prototype es una forma de los objetos para heredar caracteristicas en javascript.
+Constructor: el Constructor es un metodo que inicializa un objeto, es el que define los parametros inciales del objeto.
