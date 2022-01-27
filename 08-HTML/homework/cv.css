@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 150%;
+}
+.contenedor {
+    display: flex;
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 100vh;
+}
+aside {
+    background-color: #005346;
+    color: floralwhite;
+    font-size: 14px;
+    text-align: justify;
+    flex: 1;
+    padding-top: 50px;
+    border-radius: 8px 0 0 8px;
+    
+    
+}
+main {
+    flex: 2;
+    font-size: 16px;
+    padding-left: 60px;
+    padding: 30px 50px 0 50px;
+    box-shadow: 2px 7px 24px #0000003b;
+}
+.nombre {
+    text-align: center;
+    line-height: 20px;
+}
+.datos {
+    padding-left: 50px;
+    padding-top: 30px;
+}
+img {
+    border-radius: 50%;
+    width: 150px;
+    margin-bottom: 20px;
+}
+main h2 {
+    margin: 30px 0 15px;
+    color: #005346;
+}
+
+main div p{
+    text-align: justify;
+}
+.Henry {
+    width: 100%;
+    margin: 45px 90px 65px 0;
+    padding: 45px 20px;
+   box-shadow: 2px 7px 24px #44665042;
+   border-radius: 30px;
+}
+.Henry h2 {
+    text-align: center;
+    color: #005346;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.datos img {
+    width: 30px;
+    margin-right: 20px;
+    margin-bottom: 0;
+
+}
+.datos a {
+    display: flex;
+    color: honeydew;
+    align-items: flex-end;
+    text-decoration: none;
+}
